@@ -4,7 +4,6 @@ import nick from './nick.png'
 import './App.css';
 import React from 'react';
 import DayPicker from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
 
 class App extends Component {
   render() {
