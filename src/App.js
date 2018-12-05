@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import nick from './nick.png'
 import './App.css';
+import React from 'react';
+import DayPicker from 'react-day-picker';
+import 'react-day-picker/lib/style.css';
 
 class App extends Component {
   render() {
@@ -12,6 +15,7 @@ class App extends Component {
           <p>
             Can Matt Baddour come out and jam?
           </p>
+          <DayPicker />
           <a
             className="App-link"
             href="https://sudoroso.bandcamp.com"
