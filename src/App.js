@@ -38,8 +38,7 @@ class App extends Component {
           <AwesomeButton type="primary"
                       href="https://sudoroso.bandcamp.com"
                       target="_blank"
-                      rel="noopener noreferrer"
-                      style= {padding-bottom: '50px'}>
+                      rel="noopener noreferrer">
 
               Find out
 

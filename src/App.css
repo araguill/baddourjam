@@ -18,16 +18,13 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: #262626;
+  padding-bottom: 50px;
 }
 
 .App-link {
      text-decoration: none;
 }
 
-.Footer {
-  color: #262626;
-  padding-top: 50px;
-}
 
 @keyframes App-logo-spin {
   from {
