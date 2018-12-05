@@ -35,7 +35,16 @@ class App extends Component {
             />
           </div>
 
-          <AwesomeButton type="primary">Find out</AwesomeButton>
+          <AwesomeButton type="primary">
+            <a
+              className="App-link"
+              href="https://sudoroso.bandcamp.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Find out
+            </a>
+          </AwesomeButton>
 
           <a
             className="App-link"
