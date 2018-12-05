@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import nick from './nick.png'
 import './App.css';
-import React from 'react';
 import DayPicker from 'react-day-picker';
 
 class App extends Component {
