@@ -27,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src=this.state.photo className="App-logo" alt="logo" />
+          <img src={this.state.photo} className="App-logo" alt="logo" />
           <p>
             Can Baddour come out and jam?
           </p>
