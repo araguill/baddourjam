@@ -13,7 +13,6 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleDayClick = this.handleDayClick.bind(this);
-    this.handleClick = this.handleClick.bind(this);
     this.state = {
       selectedDay: undefined,
       photo: nick,
