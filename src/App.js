@@ -14,17 +14,20 @@ class App extends Component {
     this.handleDayClick = this.handleDayClick.bind(this);
     this.state = {
       selectedDay: undefined,
+      photo: {nick}
     };
   }
   handleDayClick(day) {
     this.setState({ selectedDay: day });
   }
 
+
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={nick} className="App-logo" alt="logo" />
+          <img src=this.state.photo className="App-logo" alt="logo" />
           <p>
             Can Baddour come out and jam?
           </p>
@@ -35,41 +38,14 @@ class App extends Component {
             />
           </div>
 
+          <AwesomeButton type="primary"
+                      href="https://sudoroso.bandcamp.com"
+                      target="_blank"
+                      rel="noopener noreferrer">
 
+                      Find out
 
-          class Button extends Component {
-            constructor(props) {
-              super(props);
-              this.handleClick = this.handleClick.bind(this.state.selectedDay);
-              this.state = {
-                selectedDay: undefined,
-              };
-            }
-            handleClick(day) {
-              this.setState({ selectedDay: day });
-            }
-
-            render() {
-              return (
-                <div className="Button">
-
-                    <AwesomeButton type="primary"
-                                href="https://sudoroso.bandcamp.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                onClick={this.handleClick}>
-
-                                Find out
-                          {this.props.value}
-                    </AwesomeButton>
-
-                  </div>
-              );
-            }
-          }
-
-
-
+          </AwesomeButton>
 
         </header>
         </div>
