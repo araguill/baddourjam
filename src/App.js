@@ -28,16 +28,12 @@ class App extends Component {
           </p>
 
       <div>
-        <DayPicker onDayClick={this.handleDayClick} />
-        {this.state.selectedDay ? (
-          <p>You clicked {this.state.selectedDay.toLocaleDateString()}</p>
-        ) : (
-          <p>Please select a day.</p>
-        )}
+        <DayPicker onDayClick={this.handleDayClick} 
+        selectedDays={this.state.selectedDay}
+        />
+        }
       </div>
-    );
-  }
-}
+
           <a
             className="App-link"
             href="https://sudoroso.bandcamp.com"
