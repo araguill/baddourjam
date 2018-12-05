@@ -6,6 +6,17 @@ import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.handleDayClick = this.handleDayClick.bind(this);
+    this.state = {
+      selectedDay: undefined,
+    };
+  }
+  handleDayClick(day) {
+    this.setState({ selectedDay: day });
+  }
+
   render() {
     return (
       <div className="App">
@@ -15,7 +26,12 @@ class App extends Component {
             Can Baddour come out and jam?
           </p>
           <div>
-            <DayPicker />
+            <DayPickeronDayClick={this.handleDayClick} />
+        {this.state.selectedDay ? (
+          <p>You clicked {this.state.selectedDay.toLocaleDateString()}</p>
+        ) : (
+          <p>Please select a day.</p>
+        )}
           </div>
           <a
             className="App-link"
