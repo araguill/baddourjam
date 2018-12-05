@@ -12,7 +12,7 @@ class App extends Component {
         <header className="App-header">
           <img src={nick} className="App-logo" alt="logo" />
           <p>
-            Can Matt Baddour come out and jam?
+            Can Baddour come out and jam?
           </p>
           <div>
             <DayPicker />
