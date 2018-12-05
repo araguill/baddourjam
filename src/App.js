@@ -35,14 +35,41 @@ class App extends Component {
             />
           </div>
 
-          <AwesomeButton type="primary"
-                      href="https://sudoroso.bandcamp.com"
-                      target="_blank"
-                      rel="noopener noreferrer">
 
-              Find out
 
-          </AwesomeButton>
+          class Button extends Component {
+            constructor(props) {
+              super(props);
+              this.handleClick = this.handleClick.bind(this.state.selectedDay);
+              this.state = {
+                selectedDay: undefined,
+              };
+            }
+            handleClick(day) {
+              this.setState({ selectedDay: day });
+            }
+
+            render() {
+              return (
+                <div className="Button">
+
+                    <AwesomeButton type="primary"
+                                href="https://sudoroso.bandcamp.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                onClick={this.handleClick}>
+
+                                Find out
+                          {this.props.value}
+                    </AwesomeButton>
+
+                  </div>
+              );
+            }
+          }
+
+
+
 
         </header>
         </div>
