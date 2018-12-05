@@ -37,7 +37,6 @@ class App extends Component {
 
           <AwesomeButton type="primary">
             <a
-              className="App-link"
               href="https://sudoroso.bandcamp.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -46,14 +45,6 @@ class App extends Component {
             </a>
           </AwesomeButton>
 
-          <a
-            className="App-link"
-            href="https://sudoroso.bandcamp.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Find out
-          </a>
         </header>
       </div>
     );
