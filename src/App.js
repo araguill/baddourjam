@@ -14,7 +14,7 @@ class App extends Component {
     this.handleDayClick = this.handleDayClick.bind(this);
     this.state = {
       selectedDay: undefined,
-      photo: {nick}
+      photo: nick
     };
   }
   handleDayClick(day) {
