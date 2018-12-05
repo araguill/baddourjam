@@ -5,7 +5,8 @@ import './App.css';
 import DayPicker from 'react-day-picker';
 import 'react-day-picker/lib/style.css';
 
-export default class BasicConcepts extends React.Component {
+
+class App extends Component {
   constructor(props) {
     super(props);
     this.handleDayClick = this.handleDayClick.bind(this);
@@ -15,9 +16,8 @@ export default class BasicConcepts extends React.Component {
   }
   handleDayClick(day) {
     this.setState({ selectedDay: day });
-  }}
+  }
 
-class App extends Component {
   render() {
     return (
       <div className="App">
