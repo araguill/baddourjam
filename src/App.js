@@ -39,7 +39,7 @@ class App extends Component {
                       href="https://sudoroso.bandcamp.com"
                       target="_blank"
                       rel="noopener noreferrer"
-                      styles= {padding-bottom: '50px'}>
+                      style= {padding-bottom: '50px'}>
 
               Find out
 
