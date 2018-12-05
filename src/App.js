@@ -28,10 +28,9 @@ class App extends Component {
           </p>
 
       <div>
-        <DayPicker onDayClick={this.handleDayClick} 
+        <DayPicker onDayClick={this.handleDayClick}
         selectedDays={this.state.selectedDay}
         />
-        }
       </div>
 
           <a
