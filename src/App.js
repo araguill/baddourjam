@@ -23,8 +23,10 @@ class App extends Component {
   handleDayClick(day) {
     this.setState({ selectedDay: day });
   }
-  handleClick() {
-    this.setState({ photo: baddour });
+  onClick = () => {
+  this.setState({
+    photo: baddour
+  });
   }
 
 
@@ -45,7 +47,7 @@ class App extends Component {
           </div>
 
           <AwesomeButton type="primary"
-                      onClick={this.handleClick}>
+                      onClick={this.onClick}>
 
                       Find out
 
@@ -58,7 +60,7 @@ class App extends Component {
 }
 
 ReactDOM.render(
-  <App />, 
+  <App />,
   document.getElementById("root")
 );
 
