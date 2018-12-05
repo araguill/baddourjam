@@ -12,13 +12,18 @@ class App extends Component {
   constructor(props) {
     super(props);
     this.handleDayClick = this.handleDayClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
     this.state = {
       selectedDay: undefined,
-      photo: nick
+      photo: nick,
+      weekday: undefined
     };
   }
   handleDayClick(day) {
     this.setState({ selectedDay: day });
+  }
+  handleClick() {
+    this.setState({ photo: baddour });
   }
 
 
@@ -39,9 +44,7 @@ class App extends Component {
           </div>
 
           <AwesomeButton type="primary"
-                      href="https://sudoroso.bandcamp.com"
-                      target="_blank"
-                      rel="noopener noreferrer">
+                      onClick={this.handleClick}>
 
                       Find out
 
