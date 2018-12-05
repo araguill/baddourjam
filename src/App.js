@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import nick from './nick.png'
+import baddour from './baddour.png'
 import './App.css';
 import DayPicker from 'react-day-picker';
 import { AwesomeButton } from 'react-awesome-button';
