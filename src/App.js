@@ -27,11 +27,11 @@ class App extends Component {
             Can Baddour come out and jam?
           </p>
 
-      <div>
-        <DayPicker onDayClick={this.handleDayClick}
-        selectedDays={this.state.selectedDay}
-        />
-      </div>
+          <div>
+            <DayPicker onDayClick={this.handleDayClick}
+            selectedDays={this.state.selectedDay}
+            />
+          </div>
 
           <a
             className="App-link"
