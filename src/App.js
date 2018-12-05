@@ -3,6 +3,8 @@ import logo from './logo.svg';
 import nick from './nick.png'
 import './App.css';
 import DayPicker from 'react-day-picker';
+import { AwesomeButton } from 'react-awesome-button';
+import 'react-awesome-button/dist/styles.css';
 import 'react-day-picker/lib/style.css';
 
 
