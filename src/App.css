@@ -24,6 +24,11 @@
      text-decoration: none;
 }
 
+.Footer {
+  color: #262626;
+  padding-top: 50px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
