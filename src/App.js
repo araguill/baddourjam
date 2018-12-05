@@ -13,7 +13,9 @@ class App extends Component {
           <p>
             Can Matt Baddour come out and jam?
           </p>
-          <DayPicker />
+          <div>
+            <DayPicker />
+          </div>
           <a
             className="App-link"
             href="https://sudoroso.bandcamp.com"
