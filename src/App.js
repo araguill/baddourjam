@@ -18,11 +18,12 @@ class App extends Component {
       photo: nick,
       weekday: undefined
     };
+    this.photoClick = this.photoClick.bind(this);
   }
   handleDayClick(day) {
     this.setState({ selectedDay: day });
   }
-  onClick = () => {
+  photoClick = () => {
   this.setState({
     photo: baddour
   });
@@ -46,7 +47,7 @@ class App extends Component {
           </div>
 
           <AwesomeButton type="primary"
-                      onClick={this.onClick}>
+                      onPress={this.photoClick}>
 
                       Find out
 
