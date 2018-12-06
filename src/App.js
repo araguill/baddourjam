@@ -12,22 +12,23 @@ import 'react-day-picker/lib/style.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.handleDayClick = this.handleDayClick.bind(this);
     this.state = {
       selectedDay: undefined,
       photo: nick,
       weekday: undefined
     };
-    this.photoClick = this.photoClick.bind(this);
+    this.handleDayClick = this.handleDayClick.bind(this);
+    //this.handlePhotoClick = this.handlePhotoClick.bind(this);
   }
   handleDayClick(day) {
-    this.setState({ selectedDay: day });
+    this.setState({
+      selectedDay: day,
+      photo: baddour
+    });
   }
-  photoClick = () => {
-  this.setState({
-    photo: baddour
-  });
-  }
+  //handlePhotoClick(e) {
+    //this.setState({ photo: baddour });
+//  };
 
 
 
@@ -47,12 +48,12 @@ class App extends Component {
           </div>
 
           <AwesomeButton type="primary"
-                      onPress={this.photoClick}>
+                      href="https://sudoroso.bandcamp.com"
+                      target = "_blank">
 
                       Find out
 
           </AwesomeButton>
-
         </header>
         </div>
     );
