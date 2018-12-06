@@ -10,6 +10,7 @@ import 'react-day-picker/lib/style.css';
 
 
 class App extends Component {
+
   constructor(props) {
     super(props);
     this.state = {
@@ -21,10 +22,20 @@ class App extends Component {
     //this.handlePhotoClick = this.handlePhotoClick.bind(this);
   }
   handleDayClick(day) {
-    this.setState({
-      selectedDay: day,
-      photo: baddour
-    });
+    if (day.getDay() == 6) {
+      this.setState({
+        selectedDay: day,
+        photo: baddour
+      });
+    }
+else {
+  this.setState({
+    selectedDay: day,
+    photo: nick
+  })
+}
+
+    ;
   }
   //handlePhotoClick(e) {
     //this.setState({ photo: baddour });
@@ -42,7 +53,11 @@ class App extends Component {
           </p>
 
           <div>
-            <DayPicker onDayClick={this.handleDayClick}
+            <DayPicker
+            modifiers={{
+            sunday: day => day.getDay() === 7,
+            }}
+            onDayClick={this.handleDayClick}
             selectedDays={this.state.selectedDay}
             />
           </div>
